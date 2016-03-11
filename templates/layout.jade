@@ -21,6 +21,15 @@ html(lang='en')
             h1
               a(href=locals.url)= locals.name
             p.description= locals.description
+
+    //!{JSON.stringify(locals.nav)}
+
+    div.nav
+      ul(id="header-navigation")
+        each item in locals.nav
+          li
+            a.button.transparent(href=item.url)=item.name
+
     div#content
       div.content-wrap
         block content

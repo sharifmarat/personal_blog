@@ -3,7 +3,11 @@
     "url": "http://www.sharifull.in",
     "name": "Marat Sharifullin",
     "owner": "me",
-    "description": "Let's see"
+    "description": "Let's see",
+    "nav" : [
+      { "name": "Домой", "url": "/" },
+      { "name": "Техблог", "url": "http://www.ifnull.org" }
+    ]
   },
   "plugins": [
     "./plugins/paginator.coffee"
