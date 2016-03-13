@@ -13,6 +13,12 @@ html(lang='en')
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
       link(rel='stylesheet', href=contents.css['main.css'].url)
+
+      if page
+        if page.metadata
+          if page.metadata.flickr
+            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
   body(class=bodyclass)
     header.header
       div.content-wrap
